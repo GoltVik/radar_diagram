@@ -1,39 +1,46 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Radar Diagram
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+A customizable Flutter package for drawing radar (spider) charts. Visualize multivariate data in a clear, interactive, and beautiful way. Perfect for displaying skill sets, performance metrics, or any data that benefits from a radar/spider chart representation.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+![Example Radar Diagram](assets/example.png)
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Draw radar (spider) charts with any number of axes
+- Customizable colors, labels, and data points
+- Interactive and animated chart rendering
+- Easy integration into any Flutter app
+- Responsive and supports both light and dark themes
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add `radar_diagram` to your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  radar_diagram: 1.0.0
+```
+
+Then run:
+
+```sh
+flutter pub get
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Import the package and use the `RadarDiagram` widget:
 
 ```dart
-const like = 'sample';
+import 'package:radar_diagram/radar_diagram.dart';
+
+RadarDiagram(
+    values: [3, 2, 3, 2, 3],
+    axes: 5,
+    levels: 5,
+    dataFillColor: Colors.blue,
+)
+
 ```
 
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+For more advanced usage and customization, see the [example](example/) folder.

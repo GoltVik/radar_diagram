@@ -1,6 +1,6 @@
 name: radar_diagram
-description: "A new Flutter package project."
-version: 1.0.0+1
+description: "A customizable charts radar(spider) charts. Easily visualize multivariate data with interactive and beautiful radar diagrams."
+version: 1.0.0
 repository: https://github.com/GoltVik/radar_diagram
 
 environment:
@@ -15,3 +15,4 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+
